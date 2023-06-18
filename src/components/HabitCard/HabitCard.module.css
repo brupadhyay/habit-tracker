@@ -3,8 +3,22 @@
     border-radius: 0.375rem;
     cursor: pointer;
     background-color: #cfcfcf;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .habit > button {
     display: inline-block;
+}
+
+.wrapper {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: var(--dark);
 }

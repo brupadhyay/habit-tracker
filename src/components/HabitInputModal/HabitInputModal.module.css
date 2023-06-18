@@ -5,4 +5,23 @@
     transform: translate(-50%, -50%);
     text-transform: capitalize;
     z-index: 1;
+    
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    color: var(--primary);
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.form > label, .form > input {
+    display: block;
+}
+
+.form > button {
+    border-radius: 0.375rem;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
 }

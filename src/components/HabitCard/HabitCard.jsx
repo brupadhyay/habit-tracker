@@ -31,6 +31,7 @@ const HabitCard = ({ id, habitName }) => {
         <button onClick={() => deletedHandler(id)}>Delete</button>
         <button onClick={() => archiveHandler(id)}>Acrhive</button>
       </div>
+      {showDetail && <div className={styles.wrapper}></div>}
       {showDetail && <HabitDetails habitId={id} closeDetail={closeDetail} />}
     </>
   );

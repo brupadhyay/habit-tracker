@@ -33,7 +33,7 @@ const HabitInputModal = ({ closeModal }) => {
   };
   return (
     <div className={styles.modal}>
-      <form onSubmit={handleSubmit}>
+      <form className={styles.form} onSubmit={handleSubmit}>
         <label htmlFor="habit-name">Habit Name:</label>
         <input
           type="text"
@@ -42,8 +42,6 @@ const HabitInputModal = ({ closeModal }) => {
           onChange={(e) => setHabitName(e.target.value)}
           required
         />
-        <br />
-        <br />
 
         <label htmlFor="repeat">Repeat</label>
         <select

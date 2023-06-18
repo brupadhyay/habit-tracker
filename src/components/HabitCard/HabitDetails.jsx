@@ -37,7 +37,7 @@ const HabitDetails = ({ habitId, closeDetail }) => {
 
   return (
     <div className={styles.modal}>
-      <form onSubmit={handleSubmit}>
+      <form className={styles.form} onSubmit={handleSubmit}>
         <label htmlFor="habit-name">Habit Name:</label>
         <input
           type="text"
@@ -104,8 +104,8 @@ const HabitDetails = ({ habitId, closeDetail }) => {
             <button onClick={() => setEditMode(false)}>Cancel</button>
           </>
         )}
+        <button onClick={closeDetail}>Close</button>
       </form>
-      <button onClick={closeDetail}>Close</button>
     </div>
   );
 };
