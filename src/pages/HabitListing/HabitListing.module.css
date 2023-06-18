@@ -1,0 +1,9 @@
+.mainContainer {
+    padding: 1.6rem 10%;
+}
+.view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1rem));
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
