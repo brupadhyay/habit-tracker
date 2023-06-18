@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import { HabitDetails } from "./HabitDetails";
 import { useHabit } from "../../context/HabitContext";

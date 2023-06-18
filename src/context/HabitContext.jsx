@@ -1,8 +1,10 @@
 import { createContext, useContext, useReducer } from "react";
-import { initialState, reducer } from "../reducer/Habitreducer";
+
+import { initialState, reducer } from "../reducer/HabitReducer";
 
 const HabitContext = createContext();
 
+// eslint-disable-next-line react/prop-types
 const HabitProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
